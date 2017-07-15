@@ -1,0 +1,31 @@
+apply plugin: 'java'
+
+jar {
+    manifest {
+        attributes("Lint-Registry": "com.ives.lint.ParamLengthRegistry")
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile 'com.android.tools.lint:lint-api:25.3.3'
+}
+
+defaultTasks 'assemble'
+
+// 定义一个方法lintJarOutput
+configurations {
+    lintJarOutput
+}
+// 指定定义方法lintJarOutput的作用，此处是获得调用jar方法后的生成的jar包
+dependencies {
+    lintJarOutput files(jar)
+}
+
+tasks.withType(JavaCompile){
+    options.encoding = "utf8"
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
