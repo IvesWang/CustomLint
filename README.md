@@ -14,7 +14,7 @@
 ```
 compile (name:'aarlib-release', ext:'aar')
 ```
-这样你就可以少引入custom-lint这个module<br/> 
+这样你就可以少引入custom-lint这个module<br/>
 
 5.这样做之后，**重启IDEA**即可应用你的lint规则。
 
