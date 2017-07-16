@@ -5,22 +5,26 @@
 ## Getting Start
 方案一：
 
-你可以把本库Clone下来，进行修改后重新编译出jar包，然后放到custom-lint这个module下的libs目录下，并在
-主module的build.gradle文件中加入：
+1.clone本库
+2.在lint-rules这个java module中修改规则后重新编译出jar包
+3.讲jar包放到custom-lint这个module下的libs目录下
+4.在主module的build.gradle文件中加入：
 ```
 compile (name:'aarlib-release', ext:'aar')
 ```
-这样引用之后，**重启IDEA**即可应用你的lint规则。
+5.这样引用之后，**重启IDEA**即可应用你的lint规则。
 
 方案二：
 
-你也可以直接使用本库已经编译好的lint规则，在主module的build.gradle文件中加入以下配置：
+直接使用本库已经编译好的lint规则，
+你只需要在主module的build.gradle文件中加入以下配置：
 ```
 compile 'com.github.iveswang:custom-lint:1.0'
 ```
 配置好后，同样需要**重启IDEA**才会生效。
-不过目前本库只提供了“静态常量命名不允许有小写”这一个规则，后续会继续加入更多的规则。
-如果你有更多的规则建议，请告诉我吧，暂时没想到更多好的规则。因为idea里面本身已有一套比较丰富的lint规则了。
+
+不过对于方案二，目前本库只提供了“静态常量命名不允许有小写”这一个规则，后续会继续加入更多的规则。
+如果你有更多的规则建议，请告诉我吧，暂时没想到其它的。因为idea里面本身已有一套比较丰富的lint规则了。
 
 ```
 Tips:
