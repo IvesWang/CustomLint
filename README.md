@@ -24,7 +24,7 @@ compile 'com.github.iveswang:custom-lint:1.0'
 
 ```
 Tips:
-以上方案使用场景都是Android Studio，如需要应用其它类型的IDEA及project，请在本库基础上，参照以下blog进行探索哈。
+以上方案使用场景都是Android Studio，如要使用其它类型的IDEA或project，也可使用本库中的jar，具体做法请参照以下blog进行探索哈。
 ```
 ## Blog
 关于更多使用自定义lint的知识可参看我的博客：
