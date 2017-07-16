@@ -22,7 +22,7 @@ compile 'com.github.iveswang:custom-lint:1.0'
 不过目前本库只提供了“静态常量命名不允许有小写”这一个规则，后续会继续加入更多的规则。
 如果你有更多的规则建议，请告诉我吧，暂时没想到更多好的规则。因为idea里面本身已有一套比较丰富的lint规则了。
 
-Tips:
+**Tips:**
 ```
 以上方案使用场景都是Android Studio，如需要应用其它类型的IDEA及project，请在本库基础上，参照以下blog进行探索哈。
 ```
