@@ -7,12 +7,14 @@
 
 1.clone本库<br/>
 2.在lint-rules这个java module中修改规则后重新编译出jar包<br/>
-3.讲jar包放到custom-lint这个module下的libs目录下<br/>
-4.在主module的build.gradle文件中加入：
+3.将jar包放到custom-lint这个module下的libs目录下<br/>
+4.在主module中引入custom-lint这个module<br/>
+对于第4步，你也可以在完成第3步后，编译出aar包，将其直接放在主module的libs目录下，然后在主module的build.gradle文件中加入：
 ```
 compile (name:'aarlib-release', ext:'aar')
 ```
-5.这样引用之后，**重启IDEA**即可应用你的lint规则。
+这样你就可以少引入custom-lint这个module<br/>
+5.这样做之后，**重启IDEA**即可应用你的lint规则。
 
 方案二：
 
