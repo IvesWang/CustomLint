@@ -3,7 +3,7 @@
 当你需要为你的项目或者开发团队制定一些内部的lint逻辑时，可使用这种方式。
 
 ## Getting Start
-方案一：
+**方案一：**
 
 1.clone本库<br/>
 2.在lint-rules这个java module中修改规则后重新编译出jar包<br/>
@@ -18,7 +18,7 @@ compile (name:'aarlib-release', ext:'aar')
 
 5.这样做之后，**重启IDEA**即可应用你的lint规则。
 
-方案二：
+**方案二：**
 
 直接使用本库已经编译好的lint规则，
 你只需要在主module的build.gradle文件中加入以下配置：
