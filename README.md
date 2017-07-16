@@ -22,6 +22,11 @@ compile 'com.github.iveswang:custom-lint:1.0'
 不过目前本库只提供了“静态常量命名不允许有小写”这一个规则，后续会继续加入更多的规则。
 如果你有更多的规则建议，请告诉我吧，暂时没想到更多好的规则。因为idea里面本身已有一套比较丰富的lint规则了。
 
+## Blog
+关于更多使用自定义lint的知识可参看我的博客：
+
+http://www.jianshu.com/p/5991bca931e2
+
  ## License
 
 ```
