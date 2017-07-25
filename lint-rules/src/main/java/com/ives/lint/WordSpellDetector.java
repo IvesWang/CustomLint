@@ -48,7 +48,7 @@ public class WordSpellDetector extends Detector implements Detector.JavaPsiScann
         return new WordSpellChecker(context);//返回本检查器真正的检查执行者
     }
 
-    private class WordSpellChecker extends JavaElementVisitor {
+    private static class WordSpellChecker extends JavaElementVisitor {
         private JavaContext mContext;
         WordSpellChecker(JavaContext context){
             this.mContext = context;
@@ -69,7 +69,7 @@ public class WordSpellDetector extends Detector implements Detector.JavaPsiScann
             super.visitField(field);
         }
     }
-    private boolean isAllUpper(String str){
+    private static boolean isAllUpper(String str){
         if(str==null)return true;
         char[] chars = str.toCharArray();
         for (int i = 0; i < chars.length; i++) {
